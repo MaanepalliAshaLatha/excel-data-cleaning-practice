@@ -1,61 +1,34 @@
-🏨 Hotel Booking & Multi-Dataset Excel Cleaning<br>
-<br>
-Tools: Microsoft Excel — Flash Fill, Text to Columns, SUBSTITUTE, TRIM, PROPER, VALUE, FIND, LEFT, IF<br>
-Datasets: 4 datasets, 25,000+ total rows cleaned<br>
-Goal: Demonstrate real-world Excel data wrangling across multiple raw formats.<br>
-<br>
-📌 The Challenge<br>
-<br>
-Real-world data never comes clean. This project cleaned 4 completely different datasets — each with its own messy structure — using Excel's data-wrangling techniques.<br>
-<br>
-📂 Dataset 1 — Hotel Booking Data (1,030 rows)<br>
-<br>
-Raw format: All data stored in a single delimited string:<br>
-<pre>
-B001~Rahul Sharma~Delhi~CheckIn|01-03-26~CheckOut|03-03-26~Guests|2~₹4500~Confirmed
-</pre>
-<br>
-<br>
-Cleaned to: Booking ID, Guest Name, City, Check In, Check Out, Guests, Amount, Status<br>
-<br>
-Functions and tools used:<br>
-• FIND to locate delimiters<br>
-• LEFT and MID to extract fields<br>
-• SUBSTITUTE to remove currency symbols (₹, INR, Rs)<br>
-• TRIM to remove extra spaces<br>
-• PROPER to standardise name formatting<br>
-• VALUE to convert extracted text numbers to numeric form<br>
-• Text to Columns for splitting pipe-delimited sections<br>
-• Flash Fill for pattern-based extraction<br>
-<br>
-📂 Dataset 2 — Financial Transactions (14,039 rows)<br>
-<br>
-Pipe-delimited transaction records with inconsistent amount and label formats.<br>
-Cleaned to: Transaction ID, Client Name, Business Type, Status, Amount<br>
-<br>
-📂 Dataset 3 — Employee Attendance (1,050 rows)<br>
-<br>
-Pipe-delimited records containing ID, Date, Title, Name, Department, Designation, In Time, Out Time.<br>
-Cleaned into structured attendance sheet using Text to Columns and formatting functions.<br>
-<br>
-📂 Dataset 4 — Monthly Sales Report<br>
-<br>
-Multi-column format restructured using Pivot Tables and Group by Months for time-series analysis.<br>
-<br>
-🛠️ Excel Techniques Summary<br>
-<br>
-• Flash Fill (Ctrl+E) — pattern-based auto extraction<br>
-• Text to Columns — splitting values by delimiter<br>
-• SUBSTITUTE — removing junk characters and currency symbols<br>
-• TRIM + PROPER — cleaning spaces and capitalization<br>
-• VALUE — converting text numbers to numeric<br>
-• FIND + LEFT/MID — precise extraction using character positions<br>
-• IF — conditional classification<br>
-• Pivot Tables — summary analysis for each cleaned dataset<br>
-• Group by Months — monthly pivot breakdown<br>
-• Table Format — dynamic range for all cleaned sheets<br>
-<br>
-📁 Files in This Repository<br>
-<br>
-• 205__Hotel_booking_data.xlsx — all 4 datasets (raw + cleaned outputs)<br>
-• README.md — documentation<br>
+🧹 <b>Automated Data Cleaning Pipeline (Excel)</b><br><br>
+
+<b>Tools:</b> Microsoft Excel (Power Query, Data Cleaning Functions)<br>
+<b>Datasets:</b> 4 datasets · 25,000+ rows<br><br>
+
+<b>🔍 Problem</b><br>
+Raw operational data was stored in inconsistent and unusable formats (delimited strings, mixed data types, missing structure), making it impossible to perform analysis directly.<br><br>
+
+<b>⚙️ Approach</b><br>
+• Cleaned and structured 4 different real-world datasets using Excel functions and Power Query<br>
+• Standardized inconsistent formats (text, currency, dates, delimiters)<br>
+• Built reusable cleaning workflows to handle similar raw data formats<br><br>
+
+<b>📊 Key Transformations</b><br>
+• Converted <b>1,030 hotel booking records</b> from single-string format into structured columns<br>
+• Cleaned <b>14,039 financial transactions</b> with inconsistent labels and formats<br>
+• Structured <b>1,050 employee attendance records</b> into analysis-ready format<br>
+• Transformed sales data into time-based summaries using pivot tables<br><br>
+
+<b>💡 Business Impact</b><br>
+• Enabled raw, unusable data to become <b>analysis-ready datasets</b><br>
+• Reduced manual cleaning effort through reusable workflows<br>
+• Improved data consistency for reporting and downstream analysis<br><br>
+
+<b>🛠️ Techniques Used</b><br>
+• Data parsing (Text to Columns, Flash Fill)<br>
+• Data cleaning (TRIM, SUBSTITUTE, VALUE, PROPER)<br>
+• Conditional logic (IF)<br>
+• Data transformation and summarization (Pivot Tables, Grouping)<br><br>
+
+<b>📁 Repository Structure</b><br>
+• data/ → Raw and cleaned datasets<br>
+• excel/ → Cleaning workbook<br>
+• README.md → Documentation<br>
